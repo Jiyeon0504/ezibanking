@@ -13,6 +13,9 @@ public class BoardVO {
 	
 	
 	
+	
+	
+	
 	public int getNo() {
 		return no;
 	}
