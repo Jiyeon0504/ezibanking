@@ -195,6 +195,7 @@
 									</div>
 									<h4 class="title">
 										<a href="" class="stretched-link">공지사항</a>
+										
 									</h4>
 								</div>
 							</div>
@@ -255,7 +256,8 @@
 										<i class="bi bi-megaphone"></i>
 									</div>
 									<h4 class="title">
-										<a href="getnotice.do" class="stretched-link">공지사항</a>
+										<!-- <a href="getnotice.do" class="stretched-link">공지사항</a> -->
+										<a href="${ pageContext.request.contextPath }/board" class="stretched-link">게시판</a>
 									</h4>
 								</div>
 							</div>

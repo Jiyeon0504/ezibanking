@@ -115,7 +115,8 @@
 							<li><a href="#">회원탈퇴</a></li>
 						</ul></li>
 					<li><a href="#faq">문의하기</a></li>
-					<li><a href="#portfolio">공지사항</a></li>
+					<!-- <li><a href="/ezibanking/getnotice.do">공지사항</a></li> -->
+					<li><a href="${ pageContext.request.contextPath }/board">공지사항</a></li>
 
 
 				</ul>
