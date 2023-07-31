@@ -68,7 +68,9 @@
 								<tr>
 									<td>${ board.no }</td>
 									<td><a
-										href="${pageContext.request.contextPath }/board/${ board.no }">${ board.title }</a>
+										href="${pageContext.request.contextPath }/board/${ board.no }">${ board.title } <c:if test="${ board.replyCnt ne 0 }">
+					[${ board.replyCnt }]
+				</c:if></a>
 
 									</td>
 									<td>${ board.writer }</td>
@@ -79,6 +81,7 @@
 									</a></td>
 							</c:forEach>
 						</table>
+						<a href="${ pageContext.request.contextPath }/board/write">글쓰기</a>
 
 
 

@@ -7,6 +7,7 @@
 <meta charset="utf-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="/ezibanking/css/table.css">
+<script src="http://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script>
 
 	// 댓글리스트 조회(게시판번호)
@@ -70,12 +71,6 @@
 	})
 </script>
 
-<style>
-.table tbody td .close span {
-    font-size: 12px;
-    color: #dc3545; }
-
-</style>
 </head>
 <body>
 	<!-- ======= Header ======= -->
@@ -116,7 +111,9 @@
 				<div class="row">
 					<div class="col-md-12">
 						<!-- <div class="table-wrap"> -->
-						<h2>게시판 상세 페이지</h2>
+						<div id="section" align="center">
+
+		<h2>게시판 상세 페이지</h2>
 
 		<table>
 			<tr>
@@ -206,4 +203,5 @@
 		
 	</main>
 </body>
+
 </html>
