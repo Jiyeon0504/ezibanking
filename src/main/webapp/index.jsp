@@ -130,6 +130,7 @@
 									<div class="icon">
 										<i class="bi bi-megaphone"></i>
 									</div>
+									
 									<h4 class="title">
 										<a href="" class="stretched-link">공지사항</a>
 									</h4>
