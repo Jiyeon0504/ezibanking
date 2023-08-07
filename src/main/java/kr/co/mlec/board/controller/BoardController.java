@@ -7,6 +7,7 @@ import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -25,6 +26,20 @@ public class BoardController {
 
 	@Autowired
 	private BoardService boardService;
+	
+	// 뉴스목록API
+  	
+		@GetMapping("/indexAPI")
+		public ResponseEntity<List<BoardVO>> getNewsList()
+		{
+			List<BoardVO> boardList = boardService.getBoardList();
+			
+			return ResponseEntity.ok(boardList);
+		}
+	
+	
+	
+	
 
 	@GetMapping("/board")
 
@@ -102,6 +117,11 @@ public class BoardController {
 		model.addAttribute("boardVO", board);
 
 	}
+	
+	
+	
+	
+	
 
 	@PostMapping("/board/write")
 

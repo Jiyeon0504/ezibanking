@@ -27,6 +27,14 @@
 			<version>2.2</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<!-- 나의 데이터들을 json포멧화 해주는 라이브러리https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.14.2</version>
+</dependency>
+		
 
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
 		<dependency>

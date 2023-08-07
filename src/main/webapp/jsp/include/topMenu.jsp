@@ -91,6 +91,38 @@
 				</c:if>
 			</nav>
 			<nav id="navbar" class="navbar">
+				<c:if test="${ empty loginUser }">
+				
+				
+				<ul>
+					<li><a href="/ezibanking/main.do">홈으로</a></li>
+					<li class="dropdown"><a href="/ezibanking/getMyAcclist.do"><span>계좌조회</span> <i
+							class="bi bi-chevron-down dropdown-indicator"></i></a>
+						<ul>
+							<li><a href="/ezibanking/transactList.do">입출금내역</a></li>
+							<li><a href="/ezibanking/getitemlist.do">계좌개설</a></li>
+							<li><a href="/ezibanking/transaction.do">계좌이체</a></li>
+							<li><a href="#">계좌해지</a></li>
+						</ul></li>
+					<li class="dropdown"><a href="#about"><span>오픈뱅킹</span> <i
+							class="bi bi-chevron-down dropdown-indicator"></i></a>
+						<ul>
+							<li><a href="#">약관보기</a></li>
+							<li><a href="#">계좌조회</a></li>
+						</ul></li>
+					<li><a href="#faq">문의하기</a></li>
+					<!-- <li><a href="/ezibanking/getnotice.do">공지사항</a></li> -->
+					<li><a href="${ pageContext.request.contextPath }/news">금융뉴스</a></li>
+					<li><a href="${ pageContext.request.contextPath }/board">공지사항</a></li>
+
+
+				</ul>
+				</c:if>
+				
+				
+				<c:if test="${ not empty loginUser }">
+				
+				
 				<ul>
 					<li><a href="/ezibanking/main.do">홈으로</a></li>
 					<li class="dropdown"><a href="/ezibanking/getMyAcclist.do"><span>내 계좌</span> <i
@@ -116,10 +148,12 @@
 						</ul></li>
 					<li><a href="#faq">문의하기</a></li>
 					<!-- <li><a href="/ezibanking/getnotice.do">공지사항</a></li> -->
+					<li><a href="${ pageContext.request.contextPath }/news">금융뉴스</a></li>
 					<li><a href="${ pageContext.request.contextPath }/board">공지사항</a></li>
 
 
 				</ul>
+				</c:if>
 			</nav>
 			<!-- .navbar -->
 
